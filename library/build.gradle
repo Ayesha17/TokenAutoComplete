@@ -12,6 +12,11 @@ android {
         minSdkVersion 8
         targetSdkVersion 19
     }
+    
+    // Do not abort build if lint finds errors
+    lintOptions {
+        abortOnError false
+    }
 }
 
 task jar(type: Jar) {
